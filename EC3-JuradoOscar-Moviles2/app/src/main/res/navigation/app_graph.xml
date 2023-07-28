@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/listFragment">
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.ec3.jurado.view.fragments.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/navigation_list_fragment"
+            app:destination="@id/listFragment" />
+        />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ec3.jurado.view.fragments.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details"><action
+        android:id="@+id/navigation_detail_fragment"
+        app:destination="@id/detailsFragment" /></fragment>
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.ec3.jurado.view.fragments.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info">
+    <action
+        android:id="@+id/navigation_info_fragment"
+        app:destination="@id/infoFragment" />
+</fragment>
+
+
+</navigation>
