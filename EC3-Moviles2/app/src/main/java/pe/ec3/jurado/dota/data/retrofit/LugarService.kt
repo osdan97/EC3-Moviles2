@@ -1,5 +1,4 @@
-package com.diegorivera.ejercicio.data.retrofit
-
+package pe.ec3.jurado.dota.data.retrofit
 
 import pe.ec3.jurado.dota.data.response.LugarListResponse
 import retrofit2.http.GET

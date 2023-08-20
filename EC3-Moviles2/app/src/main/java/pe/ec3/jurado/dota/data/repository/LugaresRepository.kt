@@ -1,9 +1,10 @@
 package pe.ec3.jurado.dota.data.repository
 
 
-import com.diegorivera.ejercicio.data.retrofit.ServiceInstance
+
 import pe.ec3.jurado.dota.data.response.ApiResponse
 import pe.ec3.jurado.dota.data.response.LugarListResponse
+import pe.ec3.jurado.dota.data.retrofit.ServiceInstance
 
 
 class LugaresRepository {

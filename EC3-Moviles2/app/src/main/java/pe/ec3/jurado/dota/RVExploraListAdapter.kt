@@ -2,6 +2,7 @@ package pe.ec3.jurado.dota
 import android.view.LayoutInflater
 
 import android.view.ViewGroup
+import com.squareup.picasso.Picasso
 import androidx.recyclerview.widget.RecyclerView;
 import pe.ec3.jurado.dota.databinding.ItemHerolistBinding
 import pe.ec3.jurado.dota.model.Heroe
@@ -30,12 +31,13 @@ class RVExploraListAdapter(var heroes: List<Heroe>) : RecyclerView.Adapter<Explo
 
 class ExploraVH(private val binding: ItemHerolistBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(heroe: Heroe) {
+
         binding.imageHeroe.setImageResource(R.drawable.heroe_dota2)
         //binding.txtPuntuacion.text = "${heroe.puntuacion}"
-        binding.txtNombre.text = heroe.localized_name
+        binding.txtNombre.text = heroe.localizedName
         binding.txtPuntuacion.text = heroe.id.toString()
 
-        binding.txtDescripcion.text = when (heroe.primary_attr) {
+        binding.txtDescripcion.text = when (heroe.primaryAttr) {
             "str" -> "Fuerza"
             "agi" -> "Agilidad"
             "int" -> "Inteligencia"

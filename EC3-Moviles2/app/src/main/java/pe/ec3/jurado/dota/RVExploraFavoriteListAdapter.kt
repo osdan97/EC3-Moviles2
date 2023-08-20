@@ -31,11 +31,11 @@ class ExploraFavoriteVH(private val binding: ItemFavoriteBinding) : RecyclerView
     fun bind(heroe: Heroe) {
         binding.imageHeroe.setImageResource(R.drawable.heroe_dota2)
         //binding.txtPuntuacion.text = "${heroe.puntuacion}"
-        binding.txtNombre.text = heroe.localized_name
+        binding.txtNombre.text = heroe.localizedName
         binding.txtPuntuacion.text = heroe.id.toString()
-        binding.txtAtaque.text = heroe.attack_type
+        binding.txtAtaque.text = heroe.attackType
         binding.txtRoles.text = heroe.roles.toString()
-        binding.txtDescripcion.text = when (heroe.primary_attr) {
+        binding.txtDescripcion.text = when (heroe.primaryAttr) {
             "str" -> "Fuerza"
             "agi" -> "Agilidad"
             "int" -> "Inteligencia"
