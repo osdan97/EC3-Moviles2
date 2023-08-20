@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@id/exploraListFragment"
+    android:enabled="true"
+    android:icon="@drawable/round_map_24"
+    android:title="Heroes Lista"/>
+    <item
+        android:id="@id/exploraFavoriteFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_map2"
+        android:title="Heroes Favoritos"/>
+    <item
+        android:id="@id/exploraInfoFragment"
+        android:enabled="true"
+        android:icon="@drawable/outline_perm_device_information_24"
+        android:title="Info"/>
+</menu>

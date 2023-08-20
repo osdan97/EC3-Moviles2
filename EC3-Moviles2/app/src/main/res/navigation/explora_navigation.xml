@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/explora_navigation"
+    app:startDestination="@id/exploraListFragment">
+
+    <fragment
+        android:id="@+id/exploraFavoriteFragment"
+        android:name="pe.ec3.jurado.dota.view.fragments.ExploraFavoriteFragment"
+        android:label="fragment_explora_favorite"
+        tools:layout="@layout/fragment_explora_favorite" >
+        <action
+            android:id="@+id/action_exploraFavoriteFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploraInfoFragment"
+        android:name="pe.ec3.jurado.dota.view.fragments.ExploraInfoFragment"
+        android:label="fragment_explora_info"
+        tools:layout="@layout/fragment_explora_info" >
+        <action
+            android:id="@+id/action_exploraInfoFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploraListFragment"
+        android:name="pe.ec3.jurado.dota.view.fragments.ExploraListFragment"
+        android:label="fragment_explora_list"
+        tools:layout="@layout/fragment_explora_list" >
+        <action
+            android:id="@+id/action_exploraListFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="pe.ec3.jurado.dota.view.fragments.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+</navigation>
